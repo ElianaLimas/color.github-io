@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<br>
+<title> CSS Color and Background </title>
+<style>
+	table {
+	width:100%;
+	border:1px solid #dddddd;
+	text-align:center;
+}
+td, th {
+	border:1px solid #dddddd;
+	padding:8px;
+}
+td {
+	font-family: "Courier", Courier New, monospace;
+	font-weight: bold;
+}
+tr:nth-child(odd) {
+	background-color:#dddddd;
+
+}
+.light {
+	background-color:slategray;
+}
+.background {
+	background-color:crimson;
+}
+.imissyou {
+	background-color:orange;
+}
+.corny {
+	background-color:yellow;
+}
+.one {
+	background-color:deeppink;
+}
+.two {
+	background-color:deeppink;
+	opacity:0.6;
+}
+.three {
+	background-color:deeppink;
+	opacity:0.3;
+}
+.four {
+	background-image: url(https://img1.picmix.com/output/stamp/normal/1/1/6/3/2673611_97cc0.png);
+	background-repeat:no-repeat;
+}
+.rgbbg {
+	animation-name: rgbthing;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+@keyframes rgbthing {
+	0% {background-color: red}
+	33% {background-color: green}
+	66% {background-color: blue}
+	100% {background-color: red}
+}
+.repeat {
+	background-image:url(https://img1.picmix.com/output/stamp/normal/1/1/6/3/2673611_97cc0.png);
+	background-repeat:repeat-x;
+}
+.attachment {
+	 background-image: url("https://img1.picmix.com/output/stamp/normal/1/1/6/3/2673611_97cc0.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  margin-right: 200px;
+  background-attachment: fixed;
+}
+.attachment2 {
+	background-image: url("https://img1.picmix.com/output/stamp/normal/1/1/6/3/2673611_97cc0.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  margin-right: 200px;
+  background-attachment: scroll;
+}
+</style>
+</head>
+<body>
+	 <h1 align="center">Cascading Style Sheets Colors and Background</h1>
+<hr>
+  <center>
+  <p> This website shall serve as a simple demonstration of the beauty and simplicity that CSS Colors have to offer and the various background properties that help enhance a websites aesthetic.</p>
+  <h2 >The General Definition of 'CSS Colors' </h2>
+  <h3 > 'CSS' /ˈkələr/ | Abbreviation/plural noun</h3>
+  <hr width="25%" color="black">
+  <p><q><i>The color CSS property sets the foreground color value of an element's text and text decorations, and sets the current color value.</i></q></p>
+  </center>
+<hr>
+<h1 align="center"> A Quick Peak at the Colors (Text) </h1>
+  <table>
+	<tr>
+		<th> LIGHT COLORS </th>
+		<th> DARK COLORS </th>
+	</tr>
+	<tr>
+		<td style="color:#e6e6fa;" class="light">Lavender </td>
+		<td style="color:black;">Black</td>
+	</tr>
+	<tr>
+		<td style="color:gold;" class="light">Gold</td>
+		<td style="color:navy;" >Navy </td>
+	</tr>
+	<tr>
+		<td style="color:tomato;" class="light">Tomato</td>
+		<td style="color:maroon;" >Maroon</td>
+	</tr>
+	<tr>
+		<td style="color:orange;" class="light">Orange</td>
+		<td style="color:crimson" >Crimson</td>
+	</tr>
+    <tr>
+		<td style="color:dodgerblue;" class="light">DodgerBlue</td>
+		<td style="color:darkmagenta;" >DarkMagenta</td>
+	</tr>
+    <tr>
+		<td style="color:mediumseagreen;"class="light">MediumSeaGreen</td>
+		<td style="color:darkgreen;">DarkGreen</td>
+	</tr>
+    <tr>
+		<td style="color:whitesmoke;"class="light">WhiteSmoke</td>
+		<td style="color:darkred;">DarkRed</td>
+	</tr>
+    <tr>
+		<td style="color:turquoise;"class="light">Turquoise </td>
+		<td style="color:midnightblue;">MidnightBlue</td>
+	</tr>
+    <tr>
+		<td style="color:lightgray;"class="light">LightGray</td>
+		<td style="color:darkslategrey;">DarkSlateGray</td>
+	</tr>
+    <tr>
+		<td style="color:violet;"class="light">Violet</td>
+		<td style="color:indigo;">Indigo</td>    
+	</tr>
+	<tr>
+		<td style="color:mintcream;"class="light">MintCream</td>
+		<td style="color:deeppink;">DeepPink</td>
+	</tr>
+	<tr>
+		<td style="color:mistyrose;"class="light">MistyRose </td>
+		<td style="color:rebeccapurple;">RebeccaPurple </td>
+	</tr>
+<tr>
+		<td style="color:orchid;"class="light">Orchid </td>
+		<td style="color:teal;">Teal</td>
+	</tr>
+<tr>
+		<td style="color:pink;"class="light"class="light">Pink </td>
+		<td style="color:darkcyan;">DarkCyan</td>
+	</tr>
+<tr>
+		<td style="color:salmon;"class="light"class="light">Salmon </td>
+		<td style="color:purple;">Purple</td>
+	</tr>
+<tr>
+		<td style="color:seashell;"class="light"class="light">SeaShell </td>
+		<td style="color:olive;">Olive</td>
+	</tr>
+<tr>
+		<td style="color:skyblue;"class="light"class="light">SkyBlue </td>
+		<td style="color:brown;">Brown</td>
+	</tr>
+<tr>
+		<td style="color:wheat;"class="light"class="light">Wheat </td>
+		<td style="color:goldenrod;">GoldenRod</td>
+	</tr>
+<tr>
+		<td style="color:yellow;"class="light">Yellow </td>
+		<td style="color:orangered;">OrangeRed</td>
+	</tr>
+<tr>
+		<td style="color:snow;"class="light">Snow</td>
+		<td style="color:steelblue;">SteelBlue</td>
+	</tr>
+<tr>
+		<td style="color:papayawhip;"class="light">PapayaWhip</td>
+		<td style="color:blue;">Blue</td>
+	</tr>
+<tr>
+		<td style="color:palegoldenrod;"class="light">PaleGoldenRod </td>
+		<td style="color:rosybrown;">RosyBrown </td>
+	</tr>
+	<tr>
+		<td style="color:paleturquoise;"class="light">PaleTurquoise</td>
+		<td style="color:dimgray;">DimGray </td>
+	</tr>
+<tr>
+		<td style="color:moccasin;"class="light">Moccasin </td>
+		<td style="color:chocolate;">Chocolate </td>
+	</tr>
+<tr>
+		<td style="color:linen;"class="light">Linen </td>
+		<td style="color:mediumblue;">MediumBlue</td>
+	</tr>
+<tr>
+		<td style="color:lavenderblush;"class="light">LavenderBlush </td>
+		<td style="color:darkkhaki;">DarkKhaki </td>
+	</tr>
+<tr>
+		<td style="color:khaki"class="light"> Khaki </td>
+		<td style="color:darkorange;">DarkOrange </td>
+	</tr>
+ </table>
+ <hr>
+ <div align="center">
+  <h1> DIVING INTO CSS COLORS IN BACKGROUNDS AND BORDERS </h1>
+  <hr width="25%" color="black">
+  <p> CSS Colors may be applied to the background of HTML Elements. For example: </p>
+  <br>
+  <h2 class="background"> Hello World! </h2>
+  <h2 class="imissyou"> Hello World! </h2>
+  <h2 class="corny"> Hello World! </h2>
+  <p> This may be done with inline and external CSS as well. However, it is much simpler and recommendable to do it with internal CSS.</p>
+  <br>
+  <hr width="25%" color="black">
+  <p> Another HTML Element that you may apply CSS Colors to are "borders", for example: </p>
+  <br>
+  <h2 style="border:2px dotted blue;"> Yehaw! </h2>
+  <h2 style="border: 2px solid green;"> Ha? </h2>
+  <h2 style="border:2px double purple;"> Naku </h2>
+  <br>
+ <hr>
+ <h1> THE BASICS OF CSS BACKGROUNDS </h1>
+ <hr width="25%" color="black">
+ <p> As aforementioned, CSS may be applied to any HTML Element. This includes backgrounds; the color, image, position, and many more thereof could be customized to your liking. The following are an example of 1. "background-color" being applied to an h3 element, 2. the opacity/transparency of the background depending on the value you set (1 - 0.1)</p>
+ <div class="one">
+ 	<h3> I WAS A GIRL IN A VILLAGE DOING ALRIGHT THEN I BECAME A PRINCESS OVERNIGHT NOW I GOTTA FIGURO HOW TO DO THIS RIGHT SO MUCH TO LEARN AND SEE </h3>
+ </div>
+ <div class="two">
+ 	<h3> UP IN THE CASTLE WITH MY NEW FAMILY IN A SCHOOL THAT'S JUST FOR ROYALTY A WHOLE ENCHANTED WORLD IS WAITING FOR ME </h3>
+ </div>
+ <div class="three">
+ 	<h3> I'M SO EXCITED TO BE (SOFIA THE FIRST) </h3>
+ </div>
+ 	 <p> Here, we demonstrate how images can be used as backgrounds for HTML Elements. For example: </p>
+ <div class="four"> 
+ 	<h1> gegagedigedagedago gegagedigedagedago gegagedigedagedago gegagedigedagedago gegagedigedagedago gegagedigedagedago gegagedigedagedago gegagedigedagedago gegagedigedagedagogegagedigedagedago gegagedigedagedago gegagedigedagedago gegagedigedagedago gegagedigedagedago gegagedigedagedagogegagedigedagedago gegagedigedagedago gegagedigedagedago gegagedigedagedago gegagedigedagedago gegagedigedagedago </h1>
+ </div>
+ <div class="rgbbg">
+ 	<h1>This is a simple animation that you could do in your backgrounds too!</h1>
+ </div>
+ <p> Here, we see a demonstration of background-repeat being used: </p>
+<div class="repeat">
+<h1>gegagedigedagedago gegagedigedagedago gegagedigedagedago gegagedigedagedago gegagedigedagedago gegagedigedagedago gegagedigedagedago gegagedigedagedago gegagedigedagedagogegagedigedagedago gegagedigedagedago gegagedigedagedago gegagedigedagedago gegagedigedagedago gegagedigedagedagogegagedigedagedago gegagedigedagedago gegagedigedagedago gegagedigedagedago gegagedigedagedago gegagedigedagedago</h1>
+</div>
+<div class="attachment">
+	<h1>The background-attachment Property</h1>
+
+<p>The background-attachment property specifies whether the background image should scroll or be fixed (will not scroll with the rest of the page).</p>
+
+<p><strong>Tip:</strong> If you do not see any scrollbars, try to resize the browser window.</p>
+
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+
+</div>
+<div class="attachment2">
+	<h1>The background-attachment Property</h1>
+
+<p>The background-attachment property specifies whether the background image should scroll or be fixed (will not scroll with the rest of the page).</p>
+
+<p><strong>Tip:</strong> If you do not see any scrollbars, try to resize the browser window.</p>
+
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+
+</div>
+<br>
+<br>
+<hr>
+<br>
+<h2> In conclusion, CSS Colors and Backgrounds are fairly fun and easy compared to other areas of coding; so have fun exploring what you can do with them! - Sincerely, <i> Limas, Razon, Saga, and Sim </i></h2>
+<br>
+<hr>
+  </div>
+  <p align="center">&copy; 2025 Sigma Skibidi Group 3</p>
+
+</body>
+</html>
